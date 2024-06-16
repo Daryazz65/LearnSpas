@@ -23,5 +23,30 @@ namespace LearnSpas.Windows
         {
             InitializeComponent();
         }
+
+        private void LearnBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DopMaterialBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ProfilBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ModulOneBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ModulTwoBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

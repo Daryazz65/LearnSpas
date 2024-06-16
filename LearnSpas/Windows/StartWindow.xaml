@@ -33,7 +33,7 @@
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
         <!--Лого.-->
-            <Image Grid.RowSpan="2" Source="/Resources/Images/Logo.png" 
+            <Image Name="LogoImg" Grid.RowSpan="2" Source="/Resources/Images/Logo.png" 
                    HorizontalAlignment="Left" Height="70"/>
         <!--Кнопки меню.-->
             <!--Кнопка "Обучение".-->
@@ -42,8 +42,8 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="/Resources/Icons/Obychenie.png" VerticalAlignment="Center"/>
-                <Button BorderBrush="#293B43" Grid.Column="1" Width="123" 
+                <Image Name="ObychenieImgIcon" Source="/Resources/Icons/Obychenie.png" VerticalAlignment="Center"/>
+                <Button Name="LearnBtn" Click="LearnBtn_Click" BorderBrush="#293B43" Grid.Column="1" Width="123" 
                         Content="Обучение" Background="#293B43" HorizontalAlignment="Left"/>
             </Grid>
             <!--Кнопка "Дополнительный материал".-->
@@ -52,8 +52,8 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="/Resources/Icons/DopMaterial.png" VerticalAlignment="Center"/>
-                <Button BorderBrush="#293B43" Grid.Column="1" Width="170" 
+                <Image Name="DopMaterialImgIcon" Source="/Resources/Icons/DopMaterial.png" VerticalAlignment="Center"/>
+                <Button Name="DopMaterialBtn" Click="DopMaterialBtn_Click" BorderBrush="#293B43" Grid.Column="1" Width="170" 
                         Content="Доп. материал" Background="#293B43" HorizontalAlignment="Left"/>
             </Grid>
             <!--Кнопка "Профиль".-->
@@ -62,8 +62,8 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="/Resources/Icons/Profil.png" VerticalAlignment="Center"/>
-                <Button BorderBrush="#293B43" Grid.Column="1" Width="113" 
+                <Image Name="ProfilImg" Source="/Resources/Icons/Profil.png" VerticalAlignment="Center"/>
+                <Button Name="ProfilBtn" Click="ProfilBtn_Click" BorderBrush="#293B43" Grid.Column="1" Width="113" 
                         Content="Профиль" Background="#293B43" HorizontalAlignment="Left"/>
             </Grid>
 
@@ -86,11 +86,11 @@
             <!--Элементы. -->
             <Image Source="/Resources/Images/BlueDog.png" 
                    Grid.Column="2" Grid.RowSpan="2"/>
-            <Button Grid.ColumnSpan="3" Grid.Row="2"
+            <Button Name="ModulOneBtn" Click="ModulOneBtn_Click" Grid.ColumnSpan="3" Grid.Row="2"
                     Background="#131F24" BorderBrush="#293B43"
                     Margin="15" 
                     VerticalAlignment="Center">
-                <TextBlock Text="Перейти к модулю 1" FontSize="15"/>
+                <TextBlock Name="ModulOneTbl" Text="Перейти к модулю 1" FontSize="15"/>
             </Button>
             <Grid Grid.RowSpan="2">
                 <Grid.RowDefinitions>
@@ -123,7 +123,7 @@
             <!--Элементы. -->
             <Image Source="/Resources/Images/BlueDog.png" 
                    Grid.Column="2" Grid.RowSpan="2"/>
-            <Button Grid.ColumnSpan="3" Grid.Row="2"
+            <Button Name="ModulTwoBtn" Click="ModulTwoBtn_Click" Grid.ColumnSpan="3" Grid.Row="2"
                     Background="#131F24" BorderBrush="#293B43"
                     Margin="15" 
                     VerticalAlignment="Center">
