@@ -137,7 +137,7 @@
                 </Grid.RowDefinitions>
                 <TextBlock Text="МОДУЛЬ 2" FontSize="20"
                            HorizontalAlignment="Left" Margin="10"/>
-                <TextBlock Grid.Row="1" Text="3 урока" FontSize="15"
+                <TextBlock Grid.Row="1" Text="4 урока" FontSize="15"
                            HorizontalAlignment="Left" Margin="10 -30 0 0"
                            Foreground="#949DA1"/>
             </Grid>
