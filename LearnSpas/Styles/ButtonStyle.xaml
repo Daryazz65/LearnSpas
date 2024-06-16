@@ -6,7 +6,9 @@
         <Setter Property="Padding" Value="5 0" />
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="BorderThickness" Value="1 1 3 3" />
-        <Setter Property="BorderBrush" Value="Black" />
-        <Setter Property="Background" Value="#FF8FA430" />
+        <Setter Property="BorderBrush" Value="#026DD0" />
+        <Setter Property="Background" Value="#026DD0" />
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Foreground" Value="White" />
     </Style>
 </ResourceDictionary>
