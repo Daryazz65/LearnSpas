@@ -5,8 +5,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnSpas.Windows"
         mc:Ignorable="d"
-        Title="LevelWindow" Height="450" Width="800">
+        Title="StartWindow" Height="450" Width="800" Background="#131F24">
+    <!--Основная разметка.-->
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+
+        </Grid.RowDefinitions>
+        <!--Разметка левого меню.-->
+        <Grid Grid.RowSpan="11" Background="#293B43">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <!--Лого.-->
+            <Image Name="LogoImg" Grid.RowSpan="2" Source="/Resources/Images/Logo.png" 
+                   HorizontalAlignment="Left" Height="70"/>
+            <!--Кнопки меню.-->
+            <!--Кнопка "Обучение".-->
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="ObychenieImgIcon" Source="/Resources/Icons/Obychenie.png" VerticalAlignment="Center"/>
+                <Button Name="LearnBtn" Click="LearnBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="123" 
+                        Content="Обучение" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+            <!--Кнопка "Дополнительный материал".-->
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="DopMaterialImgIcon" Source="/Resources/Icons/DopMaterial.png" VerticalAlignment="Center"/>
+                <Button Name="DopMaterialBtn" Click="DopMaterialBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="170" 
+                        Content="Доп. материал" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+            <!--Кнопка "Профиль".-->
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="ProfilImg" Source="/Resources/Icons/Profil.png" VerticalAlignment="Center"/>
+                <Button Name="ProfilBtn" Click="ProfilBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="113" 
+                        Content="Профиль" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+        </Grid>
+        
+        
+        <!--Разметка правой стороны окна.-->
+        <!--Верх.--> 
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+
+            <Grid Background="#026DD0" Margin="15">
+                <Grid Grid.RowSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Модуль 1" FontSize="15" Foreground="#949DA1"
+                           HorizontalAlignment="Left" Margin="30 0 0 0"/>
+                    <TextBlock Grid.Row="1" Text="Ознакомительное занятие" FontSize="20"
+                           HorizontalAlignment="Left" Margin="10 -30 0 0"
+                           Foreground="White"/>
+                </Grid>
+            </Grid>
+                
+                
+                
+        </Grid>
+        
+        <!--Низ.--> 
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+        </Grid>
         
     </Grid>
 </Window>
