@@ -38,5 +38,10 @@ namespace LearnSpas.Windows
         {
 
         }
+
+        private void StrelkaCloseModulOneBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
