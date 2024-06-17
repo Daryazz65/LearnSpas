@@ -26,22 +26,42 @@ namespace LearnSpas.Windows
 
         private void LearnBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            //Обцчение.
         }
 
         private void DopMaterialBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            //Доп. материал.
         }
 
         private void ProfilBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            //Профиль. 
         }
 
         private void StrelkaCloseModulOneBtn_Click(object sender, RoutedEventArgs e)
         {
+            //Не нужно!!! Ошибочка вышла небольшая. Чтож, бывает же такое, надо же...
+        }
 
+        private void VozvratModulBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //"Модуль 1" - возврат на главное окно.
+        }
+
+        private void LevelOneBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //Уровень 1.
+        }
+
+        private void LevelTwoBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //Уровень 2.
+        }
+
+        private void LevelThreeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //Уровень 3.
         }
     }
 }

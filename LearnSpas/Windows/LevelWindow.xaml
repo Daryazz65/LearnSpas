@@ -99,7 +99,8 @@
                                Margin="11 0 0 0"/>
                         <Button Background="Transparent" HorizontalAlignment="Left"
                                 Margin="23 0 0 0" BorderBrush="Transparent"
-                                Height="25">
+                                Height="25"
+                                Name="VozvratModulBtn" Click="VozvratModulBtn_Click">
                             <TextBlock Text="Модуль 1"
                                        Foreground="#949DA1"
                                        FontSize="15"/>
@@ -108,8 +109,13 @@
                     </Grid>
                 </Grid>
             </Grid>
-         <!--Уровень 1.-->        
-                
+         <!--Уровень 1.-->
+            <Button Background="Transparent" BorderBrush="Transparent"
+                    Grid.Row="1" Width="81" Height="60"
+                    Name="LevelOneBtn" Click="LevelOneBtn_Click">
+                <Image Source="/Resources/Icons/Level.png" Width="150"/>
+
+            </Button>
                 
         </Grid>
         
@@ -120,6 +126,21 @@
                 <RowDefinition Height="80" />
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
+            
+            <!--Уровень 2.-->
+            <Button Background="Transparent" BorderBrush="Transparent"
+                    Width="81" Height="60" Margin="-100 0 0 0"
+                    Name="LevelTwoBtn" Click="LevelTwoBtn_Click">
+                <Image Source="/Resources/Icons/Level.png" Width="150"/>
+
+            </Button>
+            <!--Уровень 3.-->
+            <Button Background="Transparent" BorderBrush="Transparent"
+                    Grid.Row="1" Width="81" Height="60"
+                    Name="LevelThreeBtn" Click="LevelThreeBtn_Click">
+                <Image Source="/Resources/Icons/Level.png" Width="150"/>
+
+            </Button>
         </Grid>
         
     </Grid>
