@@ -67,16 +67,16 @@
                         Content="Профиль" Background="#293B43" HorizontalAlignment="Left"/>
             </Grid>
         </Grid>
-        
-        
+
+
         <!--Разметка правой стороны окна.-->
-        <!--Верх.--> 
+        <!--Верх.-->
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="80" />
             </Grid.RowDefinitions>
-<!--Разметка синего модуля.--> 
+            <!--Разметка синего модуля.-->
             <Grid Background="#026DD0" Margin="15">
                 <Grid Grid.RowSpan="2">
                     <Grid.RowDefinitions>
@@ -84,7 +84,7 @@
                         <RowDefinition Height="1*" />
                         <RowDefinition Height="1*" />
                     </Grid.RowDefinitions>
-                    
+
                     <TextBlock Grid.Row="1" Text="Ознакомительное занятие" FontSize="20"
                            HorizontalAlignment="Left" Margin="10 -30 0 0"
                            Foreground="White"/>
@@ -93,7 +93,7 @@
                             <ColumnDefinition Width="200" />
                             <ColumnDefinition Width="1*" />
                         </Grid.ColumnDefinitions>
-                        
+
                         <Image Source="/Resources/Icons/Strelka.png" 
                                Width="15" HorizontalAlignment="Left"
                                Margin="11 0 0 0"/>
@@ -109,24 +109,24 @@
                     </Grid>
                 </Grid>
             </Grid>
-         <!--Уровень 1.-->
+            <!--Уровень 1.-->
             <Button Background="Transparent" BorderBrush="Transparent"
                     Grid.Row="1" Width="81" Height="60"
                     Name="LevelOneBtn" Click="LevelOneBtn_Click">
                 <Image Source="/Resources/Icons/Level.png" Width="150"/>
 
             </Button>
-                
+
         </Grid>
-        
-        <!--Низ.--> 
+
+        <!--Низ.-->
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="80" />
                 <RowDefinition Height="80" />
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
-            
+
             <!--Уровень 2.-->
             <Button Background="Transparent" BorderBrush="Transparent"
                     Width="81" Height="60" Margin="-100 0 0 0"
@@ -141,7 +141,19 @@
                 <Image Source="/Resources/Icons/Level.png" Width="150"/>
 
             </Button>
+
+
+            <Grid Grid.RowSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="/Resources/Images/NewBlackDog.png" 
+                       Grid.Column="1" Width="110"/>
+
+            </Grid>
         </Grid>
-        
+
     </Grid>
 </Window>

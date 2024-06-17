@@ -194,5 +194,8 @@
   <ItemGroup>
     <Resource Include="Resources\Icons\Strelka.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\NewBlackDog.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
