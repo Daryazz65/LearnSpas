@@ -104,6 +104,6 @@
                 <TextBlock Text="Яуза"/>
             </Button>
         </Grid>
-
+<!--Боже, зачем я все это делаю...-->
     </Grid>
 </Window>
