@@ -20,7 +20,6 @@
                 Name="CloseBtn" Click="CloseBtn_Click"
                 Focusable="False">
             <Image Source="/Resources/Icons/Close.png" />
-<!--и-->
         </Button>
     </Grid>
 </Window>
