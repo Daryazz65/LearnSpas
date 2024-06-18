@@ -5,8 +5,109 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnSpas.Windows"
         mc:Ignorable="d"
-        Title="ProfilWindow" Height="450" Width="800">
+        Title="StartWindow" Height="450" Width="800" Background="#131F24">
+    <!--Основная разметка.-->
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+
+        </Grid.RowDefinitions>
+        <!--Разметка левого меню.-->
+        <Grid Grid.RowSpan="11" Background="#293B43">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <!--Лого.-->
+            <Image Name="LogoImg" Grid.RowSpan="2" Source="/Resources/Images/Logo.png" 
+                   HorizontalAlignment="Left" Height="70"/>
+            <!--Кнопки меню.-->
+            <!--Кнопка "Обучение".-->
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="ObychenieImgIcon" Source="/Resources/Icons/Obychenie.png" VerticalAlignment="Center"/>
+                <Button Name="LearnBtn" Click="LearnBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="123" 
+                        Content="Обучение" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+            <!--Кнопка "Дополнительный материал".-->
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="DopMaterialImgIcon" Source="/Resources/Icons/DopMaterial.png" VerticalAlignment="Center"/>
+                <Button Name="DopMaterialBtn" Click="DopMaterialBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="170" 
+                        Content="Доп. материал" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+            <!--Кнопка "Профиль".-->
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="ProfilImg" Source="/Resources/Icons/Profil.png" VerticalAlignment="Center"/>
+                <Button Name="ProfilBtn" Click="ProfilBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="113" 
+                        Content="Профиль" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+        </Grid>
+
+
         
+        
+        
+        <!--Разметка правой стороны окна.-->
+        <Grid Grid.Column="1" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+
+            <!--БИНДИНГ СДЕЛАТЬ НАДА!-->
+            <TextBlock Text="Матвеева Кристина" HorizontalAlignment="Left" 
+                       VerticalAlignment="Top" Margin="10" FontSize="25"
+                       Foreground="Yellow"/>
+            <TextBlock Text="Регистрация: " HorizontalAlignment="Left"
+                       VerticalAlignment="Top" Margin="10 60 0 0"/>
+            <!--БИНДИНГ СДЕЛАТЬ НАДА!-->
+            <TextBlock Text="12.03.2024" HorizontalAlignment="Left"
+                       VerticalAlignment="Top" Margin="140 60 0 0"
+                       Foreground="Yellow"/>
+            <!--БИНДИНГ СДЕЛАТЬ НАДА!-->
+            <TextBlock Text="Специалист по приему и обработке экстренных вызовов"
+                       TextWrapping="Wrap" Foreground="Yellow"
+                       Margin="10 0 0 0"/>
+            <!--БИНДИНГ СДЕЛАТЬ НАДА!-->
+            <Image Source="/Resources/Images/kristinka.png" 
+                   Grid.Column="1" Margin="20 10 10 20"
+                   Name="UserImage"/>
+            <Button Grid.ColumnSpan="2" Grid.Row="1" Height="40"
+                    VerticalAlignment="Top" Margin="10 40 10 0"
+                    Name="GoOutBtn" Click="GoOutBtn_Click">
+                <TextBlock Text="Выйти из аккаунта"/>
+            </Button>
+
+        </Grid>
     </Grid>
 </Window>
