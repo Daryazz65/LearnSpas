@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace LearnSpas.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MkadWindow.xaml
+    /// Логика взаимодействия для BylvarnoeKolco.xaml
     /// </summary>
-    public partial class MkadWindow : Window
+    public partial class BylvarnoeKolco : Window
     {
-        public MkadWindow()
+        public BylvarnoeKolco()
         {
             InitializeComponent();
-        }
-
-        private void CloseBtn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
