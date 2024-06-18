@@ -19,7 +19,7 @@
                 Width="40" Height="30" Margin="10 10 0 0"
                 Name="CloseBtn" Click="CloseBtn_Click">
             <Image Source="/Resources/Icons/Close.png" />
-
+<!--и-->
         </Button>
     </Grid>
 </Window>
