@@ -1,0 +1,159 @@
+﻿<Window x:Class="LearnSpas.Windows.LevelTwoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearnSpas.Windows"
+        mc:Ignorable="d"
+          Title="StartWindow" Height="450" Width="800" Background="#131F24">
+    <!--Основная разметка.-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+
+        </Grid.RowDefinitions>
+        <!--Разметка левого меню.-->
+        <Grid Grid.RowSpan="11" Background="#293B43">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <!--Лого.-->
+            <Image Name="LogoImg" Grid.RowSpan="2" Source="/Resources/Images/Logo.png" 
+                   HorizontalAlignment="Left" Height="70"/>
+            <!--Кнопки меню.-->
+            <!--Кнопка "Обучение".-->
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="ObychenieImgIcon" Source="/Resources/Icons/Obychenie.png" VerticalAlignment="Center"/>
+                <Button Name="LearnBtn" Click="LearnBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="123" 
+                        Content="Обучение" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+            <!--Кнопка "Дополнительный материал".-->
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="DopMaterialImgIcon" Source="/Resources/Icons/DopMaterial.png" VerticalAlignment="Center"/>
+                <Button Name="DopMaterialBtn" Click="DopMaterialBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="170" 
+                        Content="Доп. материал" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+            <!--Кнопка "Профиль".-->
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Name="ProfilImg" Source="/Resources/Icons/Profil.png" VerticalAlignment="Center"/>
+                <Button Name="ProfilBtn" Click="ProfilBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="113" 
+                        Content="Профиль" Background="#293B43" HorizontalAlignment="Left"/>
+            </Grid>
+        </Grid>
+
+
+        <!--Разметка правой стороны окна.-->
+        <!--Верх.-->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+            <!--Разметка синего модуля.-->
+            <Grid Background="#026DD0" Margin="15">
+                <Grid Grid.RowSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="1" Text="Электронный журнал. Телефония." FontSize="20"
+                           HorizontalAlignment="Left" Margin="10 -30 0 0"
+                           Foreground="White"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="/Resources/Icons/Strelka.png" 
+                               Width="15" HorizontalAlignment="Left"
+                               Margin="11 0 0 0"/>
+                        <Button Background="Transparent" HorizontalAlignment="Left"
+                                Margin="23 0 0 0" BorderBrush="Transparent"
+                                Height="25"
+                                Name="VozvratModulBtn" Click="VozvratModulBtn_Click">
+                            <TextBlock Text="Модуль 2"
+                                       Foreground="#949DA1"
+                                       FontSize="15"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+            <!--Уровень 1.-->
+            <Button Background="Transparent" BorderBrush="Transparent"
+                    Grid.Row="1" Width="81" Height="60"
+                    Name="LevelOneBtn" Click="LevelOneBtn_Click">
+                <Image Source="/Resources/Icons/Level.png" Width="150"/>
+
+            </Button>
+
+        </Grid>
+
+        <!--Низ.-->
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <!--Уровень 2.-->
+            <Button Background="Transparent" BorderBrush="Transparent"
+                    Width="81" Height="60" Margin="-100 0 0 0"
+                    Name="LevelTwoBtn" Click="LevelTwoBtn_Click">
+                <Image Source="/Resources/Icons/Level.png" Width="150"/>
+
+            </Button>
+            <!--Уровень 3.-->
+            <Button Background="Transparent" BorderBrush="Transparent"
+                    Grid.Row="1" Width="81" Height="60"
+                    Name="LevelThreeBtn" Click="LevelThreeBtn_Click">
+                <Image Source="/Resources/Icons/Level.png" Width="150"/>
+
+            </Button>
+
+
+            <Grid Grid.RowSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="/Resources/Images/NewBlackDog.png" 
+                       Grid.Column="1" Width="110"/>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
