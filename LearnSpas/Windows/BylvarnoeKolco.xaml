@@ -18,7 +18,7 @@
                 HorizontalAlignment="Left" VerticalAlignment="Top" 
                 Width="40" Height="30" Margin="10 10 0 0"
                 Name="CloseBtn" Click="CloseBtn_Click"
-                Focusable="False">
+                FocusableChanged="CloseBtn_FocusableChanged">
             <Image Source="/Resources/Icons/Close.png" />
         </Button>
     </Grid>

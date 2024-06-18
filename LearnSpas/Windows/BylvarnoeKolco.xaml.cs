@@ -28,5 +28,10 @@ namespace LearnSpas.Windows
         {
 
         }
+
+        private void CloseBtn_FocusableChanged()
+        {
+
+        }
     }
 }
