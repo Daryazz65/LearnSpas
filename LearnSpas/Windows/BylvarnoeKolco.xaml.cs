@@ -31,8 +31,8 @@ namespace LearnSpas.Windows
 
         private void CloseBtn_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            Button myButton = new Button();
-            myButton.FocusVisualStyle = null;
+            Button button = new Button();
+            button.FocusVisualStyle = null;
         }
     }
 }
