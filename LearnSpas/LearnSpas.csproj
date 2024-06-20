@@ -64,15 +64,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Employee.cs">
+      <DependentUpon>LearnSpas.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\LearnSpas.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LearnSpas.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\LearnSpas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LearnSpas.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\LearnSpas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LearnSpas.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Post.cs">
+      <DependentUpon>LearnSpas.tt</DependentUpon>
     </Compile>
     <Compile Include="Windows\AdditionalMaterialWindow.xaml.cs">
       <DependentUpon>AdditionalMaterialWindow.xaml</DependentUpon>
@@ -246,6 +257,12 @@
     <Content Include="Models\LearnSpas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>LearnSpas.Context.cs</LastGenOutput>
+      <DependentUpon>LearnSpas.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\LearnSpas.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LearnSpas.edmx</DependentUpon>
+      <LastGenOutput>LearnSpas.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
