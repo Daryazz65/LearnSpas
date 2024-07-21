@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:LearnSpas.Windows"
         mc:Ignorable="d"
         Title="StartWindow" Height="450" Width="800" Background="#131F24">
-    <!--Основная разметка.-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250" />
@@ -17,7 +16,7 @@
             <RowDefinition Height="1*" />
 
         </Grid.RowDefinitions>
-        <!--Разметка левого меню.-->
+        
         <Grid Grid.RowSpan="11" Background="#293B43">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
@@ -32,11 +31,10 @@
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
-            <!--Лого.-->
+            
             <Image Name="LogoImg" Grid.RowSpan="2" Source="/Resources/Images/Logo.png" 
                    HorizontalAlignment="Left" Height="70"/>
-            <!--Кнопки меню.-->
-            <!--Кнопка "Обучение".-->
+            
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40" />
@@ -46,7 +44,7 @@
                 <Button Name="LearnBtn" Click="LearnBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="123" 
                         Content="Обучение" Background="#293B43" HorizontalAlignment="Left"/>
             </Grid>
-            <!--Кнопка "Дополнительный материал".-->
+            
             <Grid Grid.Row="4">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40" />
@@ -56,7 +54,7 @@
                 <Button Name="DopMaterialBtn" Click="DopMaterialBtn_Click"  BorderBrush="#293B43" Grid.Column="1" Width="170" 
                         Content="Доп. материал" Background="#293B43" HorizontalAlignment="Left"/>
             </Grid>
-            <!--Кнопка "Профиль".-->
+            
             <Grid Grid.Row="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40" />
@@ -69,7 +67,6 @@
         </Grid>
 
 
-        <!--Разметка правой стороны окна.-->
         <Grid Grid.Column="1" Grid.RowSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
@@ -86,7 +83,7 @@
 
             <Button Margin="10 0 10 0" Grid.Row="1"
                 Name="SadovBtn" Click="SadovBtn_Click">
-                <TextBlock Text="Садовое кольцо кольцо"/>
+                <TextBlock Text="Садовое кольцо"/>
             </Button>
 
             <Button Margin="10 0 10 0" Grid.Row="2"
@@ -99,11 +96,7 @@
                 <TextBlock Text="МКАД"/>
             </Button>
 
-            <Button Margin="10 0 10 0" Grid.Row="4"
-                Name="YauzaBtn" Click="YauzaBtn_Click">
-                <TextBlock Text="Яуза"/>
-            </Button>
+            
         </Grid>
-<!--Боже, зачем я все это делаю...-->
     </Grid>
 </Window>

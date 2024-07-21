@@ -20,8 +20,10 @@ namespace LearnSpas.Models
         public int IdPost { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public System.DateTime DateOfRegistration { get; set; }
+        public string DateOfRegistration { get; set; }
+        public int IdRole { get; set; }
     
         public virtual Post Post { get; set; }
+        public virtual Role Role { get; set; }
     }
 }

@@ -26,27 +26,34 @@ namespace LearnSpas.Windows
 
         private void VozvratModulBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            StartWindow startWindow = new StartWindow();
+            startWindow.Show();
+            this.Close();
         }
 
         private void LearnBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            StartWindow startWindow = new StartWindow();
+            startWindow.Show();
+            this.Close();
         }
 
         private void DopMaterialBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            AdditionalMaterialWindow additionalMaterialWindow = new AdditionalMaterialWindow();
+            additionalMaterialWindow.Show();
+            this.Close();
         }
 
         private void ProfilBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProfilWindow profilWindow = new ProfilWindow();
+            profilWindow.Show();
+            this.Close();
         }
 
         private void LevelOneBtn_Click(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void LevelTwoBtn_Click(object sender, RoutedEventArgs e)

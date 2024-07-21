@@ -1,0 +1,56 @@
+﻿<Window x:Class="LearnSpas.Windows.ModalOneLevelTwooo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearnSpas.Windows"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="450" Width="800" Background="#131F24">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Button Background="Transparent" BorderBrush="Transparent"
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="40" Height="30" Margin="10 10 0 0"
+                Name="CloseBtn" Click="CloseBtn_Click">
+            <Image Source="/Resources/Icons/Close.png" />
+        </Button>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Что разделяет внешнюю и внутреннюю стороны МКАД?"
+                       Grid.ColumnSpan="3" Grid.Row="0"
+                       FontSize="25"/>
+            <Button Height="60" Name="NepravlBtn" Click="NepravlBtn_Click"  Content="Ничего" Grid.Row="1" Margin="15"/>
+            <Button Height="60" Name="PravilBtn" Click="PravilBtn_Click"  Content="Сетчатый забор" Grid.Row="1" Grid.Column="1" Margin="15"/>
+            <Button Height="60" Name="NepravBtn" Click="NepravBtn_Click"  Content="Бетонный барьер" Grid.Row="1" Grid.Column="2" Margin="15"/>
+            <Button Name="NextBtn" Click="NextBtn_Click"
+                    Grid.Column="1" Grid.Row="3" Width="60" Height="60" 
+                    Background="Transparent" BorderBrush="Transparent">
+                <Image Source="/Resources/Icons/ButtonResume.png" />
+            </Button>
+            <TextBlock Text="" Grid.Row="2" Grid.Column="1" 
+                       Foreground="#026DD0" FontWeight="Bold"
+                       Name="OtvetTbl"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -15,24 +15,24 @@ using System.Windows.Shapes;
 namespace LearnSpas.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для ConfirmationWindow.xaml
+    /// Логика взаимодействия для SadovoeColcoWindow.xaml
     /// </summary>
-    public partial class ConfirmationWindow : Window
+    public partial class SadovoeColcoWindow : Window
     {
-        public ConfirmationWindow()
+        public SadovoeColcoWindow()
         {
             InitializeComponent();
         }
 
-        private void Yes_Click(object sender, RoutedEventArgs e)
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            // ---.
         }
 
-        private void No_Click(object sender, RoutedEventArgs e)
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
-            ProfilWindow profilWindow = new ProfilWindow();
-            profilWindow.Show();
+            AdditionalMaterialWindow additionalMaterialWindow = new AdditionalMaterialWindow();
+            additionalMaterialWindow.Show();
             this.Close();
         }
     }

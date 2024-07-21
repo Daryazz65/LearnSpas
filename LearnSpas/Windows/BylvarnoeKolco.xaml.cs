@@ -14,7 +14,9 @@ namespace LearnSpas.Windows
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            AdditionalMaterialWindow additionalMaterialWindow = new AdditionalMaterialWindow();
+            additionalMaterialWindow.Show();
+            this.Close(); 
         }
               
     }

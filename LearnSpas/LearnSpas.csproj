@@ -65,31 +65,31 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Employee.cs">
-      <DependentUpon>LearnSpas.tt</DependentUpon>
+      <DependentUpon>LearnSpasss.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LearnSpas.Context.cs">
+    <Compile Include="Models\LearnSpasss.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LearnSpas.Context.tt</DependentUpon>
+      <DependentUpon>LearnSpasss.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LearnSpas.cs">
+    <Compile Include="Models\LearnSpasss.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LearnSpas.tt</DependentUpon>
+      <DependentUpon>LearnSpasss.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LearnSpas.Designer.cs">
+    <Compile Include="Models\LearnSpasss.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LearnSpas.edmx</DependentUpon>
+      <DependentUpon>LearnSpasss.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Post.cs">
-      <DependentUpon>LearnSpas.tt</DependentUpon>
+      <DependentUpon>LearnSpasss.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>LearnSpasss.tt</DependentUpon>
     </Compile>
     <Compile Include="Windows\AdditionalMaterialWindow.xaml.cs">
       <DependentUpon>AdditionalMaterialWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\AuthorizationWindow.xaml.cs">
-      <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\BylvarnoeKolco.xaml.cs">
       <DependentUpon>BylvarnoeKolco.xaml</DependentUpon>
@@ -106,17 +106,35 @@
     <Compile Include="Windows\MkadWindow.xaml.cs">
       <DependentUpon>MkadWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ModalOneLevelOne.xaml.cs">
+      <DependentUpon>ModalOneLevelOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ModalOneLevelOnee.xaml.cs">
+      <DependentUpon>ModalOneLevelOnee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ModalOneLevelOneee.xaml.cs">
+      <DependentUpon>ModalOneLevelOneee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ModalOneLevelTwo.xaml.cs">
+      <DependentUpon>ModalOneLevelTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ModalOneLevelTwoo.xaml.cs">
+      <DependentUpon>ModalOneLevelTwoo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ModalOneLevelTwooo.xaml.cs">
+      <DependentUpon>ModalOneLevelTwooo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ProfilWindow.xaml.cs">
       <DependentUpon>ProfilWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\RegistrationWindow.xaml.cs">
-      <DependentUpon>RegistrationWindow.xaml</DependentUpon>
+    <Compile Include="Windows\SadovoeColcoWindow.xaml.cs">
+      <DependentUpon>SadovoeColcoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\TestingWindow.xaml.cs">
-      <DependentUpon>TestingWindow.xaml</DependentUpon>
+    <Compile Include="Windows\TtkWindow.xaml.cs">
+      <DependentUpon>TtkWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -150,10 +168,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\AuthorizationWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Windows\BylvarnoeKolco.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -174,11 +188,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\ModalOneLevelOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ModalOneLevelOnee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ModalOneLevelOneee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ModalOneLevelTwo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ModalOneLevelTwoo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ModalOneLevelTwooo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ProfilWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\RegistrationWindow.xaml">
+    <Page Include="Windows\SadovoeColcoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,7 +224,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\TestingWindow.xaml">
+    <Page Include="Windows\TtkWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -209,12 +247,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Models\LearnSpas.edmx">
+    <EntityDeploy Include="Models\LearnSpasss.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LearnSpas.Designer.cs</LastGenOutput>
+      <LastGenOutput>LearnSpasss.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\LearnSpas.edmx.diagram">
-      <DependentUpon>LearnSpas.edmx</DependentUpon>
+    <None Include="Models\LearnSpasss.edmx.diagram">
+      <DependentUpon>LearnSpasss.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -254,16 +292,18 @@
     <Resource Include="Resources\Images\BylvarnoeKolco.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\LearnSpas.Context.tt">
+    <Content Include="Models\LearnSpasss.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>LearnSpas.Context.cs</LastGenOutput>
-      <DependentUpon>LearnSpas.edmx</DependentUpon>
+      <DependentUpon>LearnSpasss.edmx</DependentUpon>
+      <LastGenOutput>LearnSpasss.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\LearnSpas.tt">
+    <Content Include="Models\LearnSpasss.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LearnSpas.edmx</DependentUpon>
-      <LastGenOutput>LearnSpas.cs</LastGenOutput>
+      <DependentUpon>LearnSpasss.edmx</DependentUpon>
+      <LastGenOutput>LearnSpasss.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Images\ttkKolco.png" />
+    <Resource Include="Resources\Images\SadovoeKolco.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

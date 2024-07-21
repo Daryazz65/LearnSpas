@@ -15,39 +15,30 @@ using System.Windows.Shapes;
 namespace LearnSpas.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для ProfilWindow.xaml
+    /// Логика взаимодействия для TtkWindow.xaml
     /// </summary>
-    public partial class ProfilWindow : Window
+    public partial class TtkWindow : Window
     {
-        public ProfilWindow()
+        public TtkWindow()
         {
             InitializeComponent();
         }
 
-        private void LearnBtn_Click(object sender, RoutedEventArgs e)
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-            StartWindow startWindow = new StartWindow();
-            startWindow.Show();
-            this.Close();
+            // ---.
         }
 
-        private void DopMaterialBtn_Click(object sender, RoutedEventArgs e)
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
             AdditionalMaterialWindow additionalMaterialWindow = new AdditionalMaterialWindow();
             additionalMaterialWindow.Show();
             this.Close();
         }
 
-        private void ProfilBtn_Click(object sender, RoutedEventArgs e)
+        private void CloseBtn_Click_1(object sender, RoutedEventArgs e)
         {
             // ---.
-        }
-
-        private void GoOutBtn_Click(object sender, RoutedEventArgs e)
-        {
-            ConfirmationWindow confirmationWindow = new ConfirmationWindow();
-            confirmationWindow.Show();
-            this.Close();
         }
     }
 }

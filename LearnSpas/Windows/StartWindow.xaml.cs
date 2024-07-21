@@ -31,22 +31,30 @@ namespace LearnSpas.Windows
 
         private void DopMaterialBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            AdditionalMaterialWindow additionalMaterialWindow = new AdditionalMaterialWindow();
+            additionalMaterialWindow.Show();
+            this.Close();
         }
 
         private void ProfilBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProfilWindow profilWindow = new ProfilWindow();
+            profilWindow.Show();
+            this.Close();
         }
 
         private void ModulOneBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            LevelWindow levelWindow = new LevelWindow();
+            levelWindow.Show();
+            this.Close();
         }
 
         private void ModulTwoBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            LevelTwoWindow levelTwoWindow = new LevelTwoWindow();
+            levelTwoWindow.Show();
+            this.Close();
         }
     }
 }
